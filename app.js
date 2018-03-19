@@ -9,18 +9,15 @@
 
 
 function setup(){
-	img = loadImage("sky1.png");
+	
 }
 
-function draw(){
-	image(img, 0, 0, img.width/2, img.height/2);
-}
 /*
 	get the answer to the first question
 */
 
 // get the user submit button
-const q1Btn = document.getElementById('qOne');
+const q1Btn = document.getElementById('q1');
 
 // when the user clicks, read their answer
 q1Btn.onclick = function() {
@@ -34,53 +31,6 @@ q1Btn.onclick = function() {
 	
 };
 
-const q2Btn = document.getElementById('qTwoBtn');
-
-// when the user clicks, read their answer
-q2Btn.onclick = function() {
-	const answer = document.getElementById('spiders').value;
-
-	if (answer == "Yes") {
-		document.body.style.backgroundImage = "url(spiders.jpg)"
-
-	} else if (answer == "No") {
-		document.getElementById('qThree').style.display = "block"
-
-	} 
-	
-};
-
-const q3Btn = document.getElementById('qThreeBtn');
-
-// when the user clicks, read their answer
-q2Btn.onclick = function() {
-	const answer = document.getElementById('spiders').value;
-
-	if (answer == "Yes") {
-		document.body.style.backgroundImage = "url(demons.jpg)"
-
-	} else (answer == "No") {
-		document.getElementById('qFour').style.display = "block"
-
-	} 
-	
-};
-
-const q4Btn = document.getElementById('qFourBtn');
-
-// when the user clicks, read their answer
-q2Btn.onclick = function() {
-	const answer = document.getElementById('spiders').value;
-
-	if (answer == "Yes") {
-		document.body.style.backgroundImage = "url(spiders.jpg)"
-
-	} else if (answer == "No") {
-		document.getElementById('qFive').style.display = "block"
-
-	} 
-	
-};
 
 
 
