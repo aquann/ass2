@@ -1,15 +1,20 @@
-//function myFunction() {
-//    var x = document.getElementById("myDIV");
-//    if (x.style.display === "none") {
-//        x.style.display = "block";
-//    } else {
-//        x.style.display = "none";
-//    }
-//}
+var images = {
+    good: "images/GoodSamaritan.jpg",
+    bad: "images/Serialkiller.jpg",
+    neutral: "images/OnTheEdge.jpg"
+};
 
-
-function setup(){
-	
+function getScore() {
+    var message = document.createElement("p");
+    if (score < 0) {
+        message.textContent = "You are a killer";
+        img.src = images.bad;
+    } else if (score > 0) {
+         message.textContent = "Youre good";
+        img.src = images.good;
+    } else {
+           img.src = images.neutral;
+    }
 }
 
 /*
