@@ -5,7 +5,17 @@ var images = {
 };
 
 function getScore() {
+    
+    // calculate score
+    let score = 0;
+    let answers = document.getElementsByTagName ("select");
+        for (let i = 0; i < 12; i ++ ){
+            score += +answers[i].value;
+        }
+    var img = new Image();
     var message = document.createElement("p");
+    document.body.appendChild(message);
+    document.body.appendChild(img);
     if (score < 0) {
         message.textContent = "You are a killer";
         img.src = images.bad;
@@ -22,16 +32,7 @@ function getScore() {
 */
 
 // get the user submit button
-const q1Btn = document.getElementById('q1');
+const q1Btn = document.getElementById('q1Btn');
 
 // when the user clicks, read their answer
-q1Btn.onclick = function() {
-	const answer = document.getElementById('scary').value;
-
-	if (answer == "Help") {
-		document.body.style.backgroundImage = "url(clowns.png)"
-
-	} else (answer == "Drive away") {
-		document.body.style.backgroundImage = "url(heights.jpg)"
-	
-};
+q1Btn.onclick = getScore;
