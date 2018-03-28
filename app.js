@@ -35,25 +35,3 @@ q1Btn.onclick = function() {
 		document.body.style.backgroundImage = "url(heights.jpg)"
 	
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

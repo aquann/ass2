@@ -25,6 +25,11 @@ body{
 	
 }
 
+h1{
+    font-size: 4em;
+    color: orange;
+}
+
 p{
 	font-size:3em
         ;
